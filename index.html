@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>סליחה ממני</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        background-color: #fefefe;
+        padding: 40px;
+      }
+      model-viewer {
+        width: 300px;
+        height: 400px;
+        margin: 20px auto;
+      }
+      button {
+        font-size: 22px;
+        padding: 15px 30px;
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #ff4c4c;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>הי מנהלת יקרה ❤️</h1>
+    <p>יש לי משהו חשוב לומר לך...</p>
+
+    <!-- מודל תלת מימד -->
+    <model-viewer
+      src="https://models.readyplayer.me/6846ca970b840e8455550149.glb"
+      alt="האווטאר שלי"
+      auto-rotate
+      camera-controls
+      shadow-intensity="1"
+    ></model-viewer>
+
+    <!-- כפתור להשמעת ההודעה -->
+    <br />
+    <button onclick="document.getElementById('audio').play()">לחצי כאן לשמוע אותי</button>
+    <audio id="audio" src="slicha.mp3"></audio>
+  </body>
+</html>
